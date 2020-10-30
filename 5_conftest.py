@@ -8,8 +8,7 @@ def setUp():
     yield
     print("Running method level tearDown")
 
-# Commit 2
-# Commit 2, Commit 3
+# commit 1, 2, 3, 4. 
 @pytest.yield_fixture(scope="class")
 def oneTimeSetUp(request, browser):
     print("Running one time setUp")
